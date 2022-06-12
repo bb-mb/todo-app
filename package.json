@@ -7,7 +7,6 @@
     "packages/*"
   ],
   "scripts": {
-    "kill-port": "npx kill-port 3000 3001 3002",
     "run-db": "docker compose -f docker/local/docker-compose.yml up -d",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
