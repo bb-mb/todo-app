@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgresql
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: soso01
+      POSTGRES_PASSWORD: 12341234
+    volumes:
+      - ./.data:/var/lib/postgresql/data
