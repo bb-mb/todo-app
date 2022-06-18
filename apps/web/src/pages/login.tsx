@@ -1,4 +1,4 @@
-import { LoginView } from "@/domains/auth/views";
+import { LoginView } from "@/views";
 
 const LoginPage = () => {
   return <LoginView />;

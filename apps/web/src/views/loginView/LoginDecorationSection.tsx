@@ -2,7 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 import { useMediaQuery } from "@/common/utils";
-import * as donutLottie from "./donut-lottie.json";
+import * as LoginLottie from "./login-lottie.json";
 
 export const LoginDecorationSection = () => {
   const { isLargerThanTablet } = useMediaQuery();
@@ -14,7 +14,7 @@ export const LoginDecorationSection = () => {
           <Player
             autoplay
             loop
-            src='https://assets9.lottiefiles.com/packages/lf20_q5pk6p1k.json'
+            src={LoginLottie}
             style={{ width: "70%", maxWidth: "600px" }}
           />
         </Flex>

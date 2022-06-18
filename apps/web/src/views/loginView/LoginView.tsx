@@ -1,4 +1,5 @@
 import { Flex } from "@chakra-ui/react";
+
 import { LoginDecorationSection } from "./LoginDecorationSection";
 import { LoginForm } from "./LoginForm";
 
