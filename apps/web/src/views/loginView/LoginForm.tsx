@@ -1,6 +1,10 @@
 import { Button, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 
+import { useLogin } from "@/domains/auth/hooks";
+
 export const LoginForm = () => {
+  const { googleLogin } = useLogin();
+
   return (
     <Flex
       flex={1}
@@ -21,7 +25,7 @@ export const LoginForm = () => {
         <Heading>Welcome back!</Heading>
         <Divider />
         <Stack w='200px' align='center'>
-          <Button w='full' fontWeight={500}>
+          <Button w='full' fontWeight={500} onClick={() => googleLogin()}>
             구글 로그인
           </Button>
           <Button w='full' fontWeight={500}>

@@ -1,20 +1,19 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { useEffect } from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 import { theme } from "@/styles";
-import { initializeFirebase } from "@/common/settings/firebase";
 
 import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    initializeFirebase();
-  }, []);
+const queryClient = new QueryClient();
 
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </QueryClientProvider>
   );
 }
 
