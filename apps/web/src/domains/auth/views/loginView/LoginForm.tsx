@@ -14,11 +14,11 @@ export const LoginForm = () => {
       >
         <Heading>Welcome back!</Heading>
         <Divider />
-        <Stack w='100%' align='center'>
-          <Button w='50%' maxW='200px'>
+        <Stack w='200px' align='center'>
+          <Button w='full' fontWeight={500}>
             구글 로그인
           </Button>
-          <Button w='50%' maxW='200px'>
+          <Button w='full' fontWeight={500}>
             네이버 로그인
           </Button>
         </Stack>
