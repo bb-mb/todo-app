@@ -1,19 +1,12 @@
-import { useMediaQuery } from "@/common/utils";
 import { Flex } from "@chakra-ui/react";
+import { LoginDecorationSection } from "./LoginDecorationSection";
 import { LoginForm } from "./LoginForm";
 
 export const LoginView = () => {
-  const { isLargerThanTablet } = useMediaQuery();
-
   return (
     <Flex h='full'>
       <LoginForm />
-
-      {isLargerThanTablet && (
-        <Flex flex={1} bg='teal.100'>
-          logo
-        </Flex>
-      )}
+      <LoginDecorationSection />
     </Flex>
   );
 };

@@ -23,18 +23,6 @@ module.exports = {
           "object",
           "type",
         ],
-        pathGroups: [
-          {
-            pattern: "react",
-            group: "external",
-            position: "before",
-          },
-          {
-            pattern: "@nestjs/**",
-            group: "external",
-            position: "before",
-          },
-        ],
       },
     ],
   },

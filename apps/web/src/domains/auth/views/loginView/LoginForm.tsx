@@ -2,7 +2,13 @@ import { Button, Divider, Flex, Heading, Stack } from "@chakra-ui/react";
 
 export const LoginForm = () => {
   return (
-    <Flex flex={1} align='center' justify='center' direction='column'>
+    <Flex
+      flex={1}
+      maxW='800px'
+      align='center'
+      justify='center'
+      direction='column'
+    >
       <Stack
         w='80%'
         h='60%'
