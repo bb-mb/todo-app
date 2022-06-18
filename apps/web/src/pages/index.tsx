@@ -1,5 +1,6 @@
-import { PATH } from "@/common/constants";
 import Link from "next/link";
+
+import { PATH } from "@/common/constants";
 
 export default function Web() {
   return (
